@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Programs - Statistics Department</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/tailwind.config.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="assets/logo1.png" alt="Department Logo" class="h-10 w-10">
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">Statistics Department</h1>
+                        <p class="text-xs text-gray-600">Krishnagar Government College</p>
+                    </div>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 font-medium">About</a>
+                    <a href="programs.html" class="nav-link text-gray-700 font-medium current-page">Programs</a>
+                    <a href="people.html" class="nav-link text-gray-700 font-medium">People</a>
+                    <a href="announcements.html" class="nav-link text-gray-700 font-medium">Announcements</a>
+                    <a href="events.html" class="nav-link text-gray-700 font-medium">Events</a>
+                    <a href="research.html" class="nav-link text-gray-700 font-medium">Research</a>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden text-gray-700"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Home</a>
+                    <a href="about.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">About</a>
+                    <a href="programs.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Programs</a>
+                    <a href="people.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">People</a>
+                    <a href="announcements.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Announcements</a>
+                    <a href="events.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Events</a>
+                    <a href="research.html" class="text-gray-700 font-medium py-2">Research</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="programs" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Academic Programs</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive curriculum designed to build strong statistical foundations</p>
+                </div>
+                
+                <div>
+                    <div class="data-card bg-primary-50 rounded-xl p-6 md:p-8">
+                        <div class="flex items-start mb-6">
+                            <div class="bg-primary-100 p-3 rounded-lg mr-4"><i class="fas fa-graduation-cap text-primary-600 text-2xl"></i></div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Bachelor of Science (B.Sc.)</h3>
+                                <p class="text-gray-600">3-Year Undergraduate Program</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <!-- Year 1 -->
+                            <div class="bg-white rounded-lg p-4">
+                                <h4 class="font-semibold text-lg text-gray-800 mb-3">Year 1: Semesters I & II</h4>
+                                <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                                    <!-- Semester 1 -->
+                                    <div>
+                                        <p class="font-medium text-primary-700 mb-2">Semester I</p>
+                                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Introduction to Statistics</li><li>Probability Theory</li></ul>
+                                        <div class="mt-3 grid grid-cols-2 gap-2">
+                                            <a href="assets/bsc-sem1-syllabus.pdf" download class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative">
+                                                <button data-dropdown-toggle="pyq-dropdown-sem1" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button>
+                                                <div id="pyq-dropdown-sem1" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200">
+                                                    <a href="assets/pyqs/bsc-sem1-2023.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a>
+                                                    <a href="assets/pyqs/bsc-sem1-2022.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Semester 2 -->
+                                    <div>
+                                        <p class="font-medium text-primary-700 mb-2">Semester II</p>
+                                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Descriptive Statistics</li><li>Mathematical Methods</li></ul>
+                                        <div class="mt-3 grid grid-cols-2 gap-2">
+                                            <a href="assets/bsc-sem2-syllabus.pdf" download class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative">
+                                                <button data-dropdown-toggle="pyq-dropdown-sem2" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button>
+                                                <div id="pyq-dropdown-sem2" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200">
+                                                    <a href="assets/pyqs/bsc-sem2-2023.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a>
+                                                    <a href="assets/pyqs/bsc-sem2-2022.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2022</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Year 2 -->
+                            <div class="bg-white rounded-lg p-4">
+                                <h4 class="font-semibold text-lg text-gray-800 mb-3">Year 2: Semesters III & IV</h4>
+                                <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                                    <!-- Semester 3 -->
+                                    <div>
+                                        <p class="font-medium text-primary-700 mb-2">Semester III</p>
+                                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Statistical Inference</li><li>Sampling Theory</li></ul>
+                                        <div class="mt-3 grid grid-cols-2 gap-2">
+                                            <a href="assets/bsc-sem3-syllabus.pdf" download class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative">
+                                                <button data-dropdown-toggle="pyq-dropdown-sem3" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button>
+                                                <div id="pyq-dropdown-sem3" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200">
+                                                    <a href="assets/pyqs/bsc-sem3-2023.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Semester 4 -->
+                                    <div>
+                                        <p class="font-medium text-primary-700 mb-2">Semester IV</p>
+                                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Regression Analysis</li><li>Computer Applications</li></ul>
+                                        <div class="mt-3 grid grid-cols-2 gap-2">
+                                            <a href="assets/bsc-sem4-syllabus.pdf" download class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative">
+                                                <button data-dropdown-toggle="pyq-dropdown-sem4" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button>
+                                                <div id="pyq-dropdown-sem4" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200">
+                                                    <a href="assets/pyqs/bsc-sem4-2023.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Year 3 -->
+                            <div class="bg-white rounded-lg p-4">
+                                <h4 class="font-semibold text-lg text-gray-800 mb-3">Year 3: Semesters V & VI</h4>
+                                <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                                    <!-- Semester 5 -->
+                                    <div>
+                                        <p class="font-medium text-primary-700 mb-2">Semester V</p>
+                                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Multivariate Analysis</li><li>Design of Experiments</li></ul>
+                                        <div class="mt-3 grid grid-cols-2 gap-2">
+                                            <a href="assets/bsc-sem5-syllabus.pdf" download class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative">
+                                                <button data-dropdown-toggle="pyq-dropdown-sem5" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button>
+                                                <div id="pyq-dropdown-sem5" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200">
+                                                    <a href="assets/pyqs/bsc-sem5-2023.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Semester 6 -->
+                                    <div>
+                                        <p class="font-medium text-primary-700 mb-2">Semester VI</p>
+                                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Time Series Analysis</li><li>Project Work</li></ul>
+                                        <div class="mt-3 grid grid-cols-2 gap-2">
+                                            <a href="assets/bsc-sem6-syllabus.pdf" download class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative">
+                                                <button data-dropdown-toggle="pyq-dropdown-sem6" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button>
+                                                <div id="pyq-dropdown-sem6" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200">
+                                                    <a href="assets/pyqs/bsc-sem6-2023.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <!-- Footer content goes here -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

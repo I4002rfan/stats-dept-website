@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Statistics Department</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/tailwind.config.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="assets/logo1.png" alt="Department Logo" class="h-10 w-10">
+                    <div><h1 class="text-xl font-bold text-gray-800">Statistics Department</h1><p class="text-xs text-gray-600">Krishnagar Government College</p></div>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-gray-700 font-medium">About</a>
+                    <a href="programs.html" class="nav-link text-gray-700 font-medium">Programs</a>
+                    <a href="people.html" class="nav-link text-gray-700 font-medium">People</a>
+                    <a href="announcements.html" class="nav-link text-gray-700 font-medium">Announcements</a>
+                    <a href="events.html" class="nav-link text-gray-700 font-medium current-page">Events</a>
+                    <a href="research.html" class="nav-link text-gray-700 font-medium">Research</a>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden text-gray-700"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu md:hidden mt-4 pb-4">
+                <!-- Mobile Nav Links Here -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="events" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Upcoming Events</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Join our seminars, workshops, and academic activities</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    <div class="event-card bg-white rounded-xl overflow-hidden shadow-sm"><div class="h-40 bg-gradient-to-r from-primary-500 to-purple-600"></div><div class="p-6"><div class="event-date">Jul 15</div><h3 class="font-bold text-gray-800 text-lg mb-2">National Statistics Day</h3><p class="text-gray-700 text-sm mb-4">Celebrating the contributions of statisticians to national development with guest lectures and student presentations.</p><div class="flex items-center text-sm text-gray-600 mb-4"><i class="far fa-clock mr-2"></i><span>10:00 AM - 4:00 PM</span></div><div class="flex items-center text-sm text-gray-600"><i class="fas fa-map-marker-alt mr-2"></i><span>Department Seminar Hall</span></div></div></div>
+                    <div class="event-card bg-white rounded-xl overflow-hidden shadow-sm"><div class="h-40 bg-gradient-to-r from-blue-500 to-cyan-600"></div><div class="p-6"><div class="event-date">Jul 22</div><h3 class="font-bold text-gray-800 text-lg mb-2">Data Visualization Workshop</h3><p class="text-gray-700 text-sm mb-4">Hands-on workshop on creating effective data visualizations using Python and Tableau.</p><div class="flex items-center text-sm text-gray-600 mb-4"><i class="far fa-clock mr-2"></i><span>2:00 PM - 5:00 PM</span></div><div class="flex items-center text-sm text-gray-600"><i class="fas fa-map-marker-alt mr-2"></i><span>Computer Lab 2</span></div></div></div>
+                    <div class="event-card bg-white rounded-xl overflow-hidden shadow-sm"><div class="h-40 bg-gradient-to-r from-green-500 to-teal-600"></div><div class="p-6"><div class="event-date">Aug 5</div><h3 class="font-bold text-gray-800 text-lg mb-2">Research Symposium</h3><p class="text-gray-700 text-sm mb-4">Annual research symposium showcasing student and faculty research projects with poster presentations.</p><div class="flex items-center text-sm text-gray-600 mb-4"><i class="far fa-clock mr-2"></i><span>9:00 AM - 6:00 PM</span></div><div class="flex items-center text-sm text-gray-600"><i class="fas fa-map-marker-alt mr-2"></i><span>Main Auditorium</span></div></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <!-- Footer content from index.html goes here -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
