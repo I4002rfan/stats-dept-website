@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f7fe;
+}
+
+/* === STYLES FOR THE INTERACTIVE HERO SECTION === */
+
+/* 1. The main background container */
+.hero-background {
+    position: relative;
+    background-image: url('../assets/college-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease; /* Smooth transition for any hover effects */
+}
+
+/* 2. The overlay that sits on top of the background image */
+.hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(90, 33, 182, 0.319); /* The semi-transparent purple overlay */
+    z-index: 1;
+    transition: background-color 0.5s ease; /* Smooth transition for the color change */
+}
+
+/* 3. The description text container, hidden by default */
+.hero-description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* 4. When you hover over the hero section... */
+.hero-background:hover .hero-description {
+    /* ...the description expands to its full height and fades in */
+    max-height: 1000px; /* A large value to ensure it fits any text length */
+    opacity: 1;
+}
+
+/* 5. Also, darken the overlay on hover to make the revealed text easier to read */
+.hero-background:hover::before {
+    background-color: rgba(67, 20, 133, 0.85); /* Darker purple overlay */
+}
+
+/* === YOUR EXISTING STYLES (UNCHANGED) === */
+
+.data-card {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.data-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(139, 92, 246, 0.1);
+}
+
+.faculty-card {
+    transition: all 0.3s ease;
+}
+
+.faculty-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.15);
+}
+
+.announcement-card {
+    border-left: 4px solid #8b5cf6;
+}
+
+.event-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.event-date {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #8b5cf6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.stats-bar {
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(to right, #8b5cf6, #a78bfa);
+}
+
+.research-topic {
+    transition: all 0.2s ease;
+}
+
+.research-topic:hover {
+    background-color: #ede9fe;
+}
+
+.mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.mobile-menu.open {
+    max-height: 500px;
+}
+
+.nav-link {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #8b5cf6;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.current-page::after {
+    width: 100%;
+}
+
+.download-card {
+    transition: all 0.3s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.15);
+}
+
+/* Styles for the Student List Accordion */
+.student-accordion-item {
+    background-color: white;
+    border-radius: 0.75rem; /* 12px */
+    border: 1px solid #e5e7eb; /* gray-200 */
+    overflow: hidden;
+}
+
+.student-accordion-header {
+    width: 100%;
+    padding: 1rem 1.5rem; /* 16px 24px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600; /* semibold */
+    color: #4c1d95; /* primary-900 */
+    background-color: #f5f3ff; /* primary-50 */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.student-accordion-header:hover {
+    background-color: #ede9fe; /* primary-100 */
+}
+
+.accordion-icon {
+    transition: transform 0.3s ease;
+}
+
+.student-accordion-header.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.student-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+.student-list {
+    padding: 1.5rem;
+    list-style-type: decimal;
+    list-style-position: inside;
+    color: #4b5563; /* gray-600 */
+}
+
+.student-list li {
+    padding: 0.25rem 0;
+}
