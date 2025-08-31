@@ -1,195 +1,404 @@
+/**
+ * ==========================================================================
+ * Krishnagar Government College - Statistics Department Stylesheet
+ * ==========================================================================
+ * Version: 1.5
+ * Author: Irfan Ukil
+ * Last Updated: 2025-08-30
+ *
+ * --- DESCRIPTION ---
+ * This file provides all the custom CSS for the website. It works on top of
+ * the Tailwind CSS framework to create a unique and consistent design.
+ *
+ * --- PERFORMANCE NOTE ---
+ * For a live website, it's best practice to use a "minified" version of
+ * this CSS file. Minification removes whitespace and comments to reduce
+ * the file size, making the website load faster for visitors.
+ * ==========================================================================
+ */
+
+/* ==========================================================================
+   1. Base & General Styles
+   - Imports the 'Inter' font from Google Fonts.
+   - Sets up basic styles for the body, ensuring a consistent font and color scheme.
+   - Uses flexbox to make the footer stick to the bottom of the viewport on short pages.
+   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f9f7fe;
+    background-color: #f9fafb; /* bg-gray-50 */
+    color: #374151; /* text-gray-700 */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* === STYLES FOR THE INTERACTIVE HERO SECTION === */
+main {
+    flex-grow: 1; /* Ensures the main content takes up available space */
+}
 
-/* 1. The main background container */
+/* ==========================================================================
+   2. Header & Navigation
+   - Styles for the main navigation links, including hover and active states.
+   - Logic for the mobile menu's slide-down animation.
+   ========================================================================== */
+.nav-link {
+    position: relative;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease-in-out;
+}
+.nav-link:hover {
+    background-color: #f5f3ff; /* primary-50 */
+    color: #5b21b6; /* primary-800 */
+}
+
+/* Style for the link of the current page */
+.nav-link.current-page {
+    background-color: #ede9fe; /* primary-100 */
+    color: #4c1d95; /* primary-900 */
+    font-weight: 600;
+}
+
+/* The mobile menu is hidden by default with max-height: 0 */
+.mobile-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+/* The '.open' class (added via JS) expands the menu */
+.mobile-menu.open {
+    max-height: 500px; /* A value larger than the menu's actual height */
+}
+
+/* ==========================================================================
+   3. Interactive Hero Section (Home Page)
+   - Creates an interactive hover effect on the main hero banner.
+   - The dark overlay gets darker on hover, and the description text fades in.
+   ========================================================================== */
 .hero-background {
     position: relative;
     background-image: url('../assets/college-bg.jpg');
     background-size: cover;
     background-position: center;
-    transition: all 0.5s ease; /* Smooth transition for any hover effects */
+    transition: all 0.5s ease;
 }
-
-/* 2. The overlay that sits on top of the background image */
+/* The ::before pseudo-element creates the translucent color overlay */
 .hero-background::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(90, 33, 182, 0.319); /* The semi-transparent purple overlay */
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(90, 33, 182, 0.4); /* A semi-transparent primary color */
     z-index: 1;
-    transition: background-color 0.5s ease; /* Smooth transition for the color change */
+    transition: background-color 0.5s ease;
 }
-
-/* 3. The description text container, hidden by default */
+/* The description text is hidden by default */
 .hero-description {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.7s ease-in-out, opacity 0.5s ease-in-out;
 }
-
-/* 4. When you hover over the hero section... */
+/* On hover, the description expands and becomes visible */
 .hero-background:hover .hero-description {
-    /* ...the description expands to its full height and fades in */
-    max-height: 1000px; /* A large value to ensure it fits any text length */
+    max-height: 1000px;
     opacity: 1;
 }
-
-/* 5. Also, darken the overlay on hover to make the revealed text easier to read */
+/* On hover, the overlay becomes darker to make text more readable */
 .hero-background:hover::before {
-    background-color: rgba(67, 20, 133, 0.85); /* Darker purple overlay */
+    background-color: rgba(67, 20, 133, 0.85);
 }
 
-/* === YOUR EXISTING STYLES (UNCHANGED) === */
-
-.data-card {
+/* ==========================================================================
+   4. Reusable Card & Component Styles
+   - Defines consistent hover effects for various card components.
+   ========================================================================== */
+.data-card, .faculty-card, .download-card {
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
-
-.data-card:hover {
+/* A subtle "lift" effect on hover for cards */
+.data-card:hover, .faculty-card:hover, .download-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px rgba(139, 92, 246, 0.1);
 }
 
-.faculty-card {
-    transition: all 0.3s ease;
-}
-
-.faculty-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.15);
-}
-
 .announcement-card {
-    border-left: 4px solid #8b5cf6;
-}
-
-.event-card {
-    position: relative;
-    overflow: hidden;
-}
-
-.event-date {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: #8b5cf6;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.stats-bar {
-    height: 8px;
-    border-radius: 4px;
-    background: linear-gradient(to right, #8b5cf6, #a78bfa);
-}
-
-.research-topic {
-    transition: all 0.2s ease;
-}
-
-.research-topic:hover {
-    background-color: #ede9fe;
-}
-
-.mobile-menu {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-
-.mobile-menu.open {
-    max-height: 500px;
-}
-
-.nav-link {
-    position: relative;
-    padding-bottom: 5px;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #8b5cf6;
-    transition: width 0.3s ease;
-}
-
-.nav-link:hover::after,
-.nav-link.current-page::after {
-    width: 100%;
-}
-
-.download-card {
+    border-left: 4px solid #8b5cf6; /* primary-500 */
     transition: all 0.3s ease;
 }
-
-.download-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.15);
+.announcement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(139, 92, 246, 0.1);
+    border-left-color: #6d28d9; /* primary-700 */
 }
 
-/* Styles for the Student List Accordion */
-.student-accordion-item {
-    background-color: white;
-    border-radius: 0.75rem; /* 12px */
-    border: 1px solid #e5e7eb; /* gray-200 */
+/* ==========================================================================
+   5. Accordion Styles (People & Materials Pages)
+   - Styles for collapsible accordion components.
+   - The content's max-height is animated from 0 to its natural height.
+   ========================================================================== */
+.accordion-item, .student-accordion-item {
     overflow: hidden;
 }
-
-.student-accordion-header {
+.accordion-header, .student-accordion-header {
     width: 100%;
-    padding: 1rem 1.5rem; /* 16px 24px */
+    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 600; /* semibold */
-    color: #4c1d95; /* primary-900 */
-    background-color: #f5f3ff; /* primary-50 */
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
+.accordion-header {
+    background-color: transparent;
+    font-size: 1.125rem;
+    color: #374151;
+}
+.accordion-header:hover {
+    background-color: #f9fafb;
+}
+.student-accordion-header {
+    color: #4c1d95; /* primary-900 */
+    background-color: #f5f3ff; /* primary-50 */
+    border-radius: 0.5rem;
+}
 .student-accordion-header:hover {
     background-color: #ede9fe; /* primary-100 */
 }
-
+.accordion-content, .student-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; /* Smooth slide animation */
+}
+/* Rotate the chevron icon when the accordion is active */
+.accordion-item.active .accordion-icon, .student-accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
 .accordion-icon {
     transition: transform 0.3s ease;
 }
-
-.student-accordion-header.active .accordion-icon {
-    transform: rotate(180deg);
-}
-
-.student-accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
-}
-
 .student-list {
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     list-style-type: decimal;
     list-style-position: inside;
-    color: #4b5563; /* gray-600 */
+    color: #4b5563; /* text-gray-600 */
 }
-
 .student-list li {
     padding: 0.25rem 0;
+}
+
+/* ==========================================================================
+   6. Materials Page Specific Styles
+   - Defines a responsive grid for displaying study materials.
+   - Styles for individual material cards and their thumbnails.
+   ========================================================================== */
+.semester-section {
+    background-color: #f9fafb;
+    border: 1px solid #f3f4f6;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+.category-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f3f4f6;
+}
+.material-grid {
+    display: grid;
+    /* Responsive columns: 2 for small screens, up to 4 for larger screens */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+@media (min-width: 640px) { .material-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 768px) { .material-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+
+.no-materials-text {
+    font-size: 0.875rem;
+    color: #6b7280;
+    grid-column: 1 / -1; /* Make this message span all columns */
+}
+.material-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.material-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.material-card .thumbnail {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    background-color: #f3f4f6;
+    border-bottom: 1px solid #e5e7eb;
+}
+.submit-material-btn {
+    display: inline-block;
+    background-color: #7c3aed; /* primary-600 */
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.submit-material-btn:hover {
+    background-color: #6d28d9; /* primary-700 */
+}
+
+/* ==========================================================================
+   7. PDF Preview Modal
+   - Styles for the pop-up modal that displays PDF previews.
+   ========================================================================== */
+.pdf-modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    padding: 1rem;
+}
+.pdf-modal-content {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    width: 100%;
+    max-width: 800px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.pdf-viewer-container {
+    flex-grow: 1;
+    overflow: hidden;
+}
+#close-modal {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   8. Announcement Page Tags
+   - Defines the colored tags used for categorizing announcements.
+   ========================================================================== */
+.tag-base, .tag-important, .tag-event, .tag-opportunity, .tag-update, .tag-academic {
+    display: inline-block;
+    padding: 0.25rem 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    white-space: nowrap;
+}
+.tag-important { background-color: #ede9fe; color: #5b21b6; }
+.tag-event { background-color: #dbeafe; color: #1e40af; }
+.tag-opportunity { background-color: #dcfce7; color: #166534; }
+.tag-update { background-color: #fef9c3; color: #854d0e; }
+.tag-academic { background-color: #e0e7ff; color: #3730a3; }
+
+/* ==========================================================================
+   9. Tabbed Gallery (Home Page)
+   - Styles for the tab navigation and content panes of the image gallery.
+   ========================================================================== */
+.gallery-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+.gallery-tab-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    color: #4b5563; /* text-gray-600 */
+    transition: all 0.2s ease-in-out;
+}
+.gallery-tab-btn:hover {
+    background-color: #f5f3ff; /* primary-50 */
+    color: #5b21b6; /* primary-800 */
+}
+.gallery-tab-btn.active {
+    background-color: #ede9fe; /* primary-100 */
+    color: #4c1d95; /* primary-900 */
+    font-weight: 600;
+}
+/* Panes are hidden by default */
+.gallery-pane {
+    display: none;
+}
+/* The '.active' class (added via JS) makes the pane visible */
+.gallery-pane.active {
+    display: block;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+@media (min-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+.gallery-item {
+    display: block;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prevents image distortion */
+}
+/* Caption is hidden and off-screen by default */
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+/* Caption slides in and fades in on hover */
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   10. Faculty Message Cards (Home Page)
+   - A simple styled container for the faculty messages on the home page.
+   ========================================================================== */
+.faculty-message-card {
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #f3f4f6;
+    display: flex;
+    flex-direction: column;
 }
