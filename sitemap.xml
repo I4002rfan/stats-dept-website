@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- 
+====================================================================
+Sitemap for the Krishnagar Government College Statistics Department Website
+Generated on: 2025-08-31
+This file helps search engines like Google understand the structure of the website.
+====================================================================
+-->
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://i4002rfan.github.io/stats-dept-website/index.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://i4002rfan.github.io/stats-dept-website/about.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Academic Programs Page -->
+  <url>
+    <loc>https://i4002rfan.github.io/stats-dept-website/programs.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- People (Faculty & Students) Page -->
+  <url>
+    <loc>https://i4002rfan.github.io/stats-dept-website/people.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Announcements Page -->
+  <url>
+    <loc>https://i4002rfan.github.io/stats-dept-website/announcements.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Study Materials Page -->
+  <url>
+    <loc>https://i4002rfan.github.io/stats-dept-website/materials.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Research Page -->
+  <url>
+    <loc>https://i4002rfan.github.io/stats-dept-website/research.html</loc>
+    <lastmod>2025-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
