@@ -1,6 +1,38 @@
+/**
+ * ==========================================================================
+ * Tailwind CSS Configuration for CDN
+ * ==========================================================================
+ * Version: 1.1
+ * Author: Irfan Ukil
+ *
+ * --- DESCRIPTION ---
+ * This file extends the default Tailwind CSS theme with custom settings for this project.
+ * It's used to define the website's color palette, fonts, and other design
+ * tokens in one central place, ensuring brand consistency.
+ *
+ * --- HOW IT WORKS ---
+ * The `<script src="https://cdn.tailwindcss.com"></script>` in the HTML files
+ * automatically detects a global JavaScript object named `tailwind.config`.
+ * It merges the settings from this object with its default configuration.
+ *
+ * This allows you to use custom utility classes in your HTML, such as
+ * `bg-primary-500` or `text-secondary-700`, which correspond to the
+ * colors defined below.
+ * ==========================================================================
+ */
 tailwind.config = {
     theme: {
+        /**
+         * The 'extend' object allows us to add new values to Tailwind's
+         * default theme without overwriting the existing ones.
+         */
         extend: {
+            /**
+             * The 'colors' object is used to define a custom color palette.
+             * We've defined 'primary' (a purple shade) and 'secondary' (a blue shade)
+             * color schemes. Each color has a range of shades from 50 (lightest)
+             * to 900 (darkest), following Tailwind's naming convention.
+             */
             colors: {
                 primary: {
                     50: '#f5f3ff',

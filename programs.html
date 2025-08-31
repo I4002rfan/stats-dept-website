@@ -3,19 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Programs - Statistics Department</title>
+
+    <!-- =================================================================
+         SEO (Search Engine Optimization) and Social Media Meta Tags 
+         ================================================================= -->
+    <title>Academic Programs (Major & Minor) | KGC Statistics Department</title>
+    <meta name="description" content="Explore the B.Sc. Statistics Major (4-Year) and Minor (3-Year) academic programs at Krishnagar Government College. View syllabus, course structure, and PYQs.">
+    <meta name="keywords" content="B.Sc. Statistics Krishnagar Government College, Statistics Minor course KGC, Krishnagar Government College Statistics Department, KGC Statistics admission, Kalyani University statistics syllabus, undergraduate statistics program KGC">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://i4002rfan.github.io/stats-dept-website/programs.html">
+    <meta name="author" content="Krishnagar Government College Statistics Department">
+
+    <!-- Open Graph Tags (for sharing on Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Academic Programs (Major & Minor) | KGC Statistics Department">
+    <meta property="og:description" content="Detailed information on the B.Sc. Major and Minor programs in Statistics offered at Krishnagar Government College, affiliated with Kalyani University.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://i4002rfan.github.io/stats-dept-website/programs.html">
+    <meta property="og:image" content="https://i4002rfan.github.io/stats-dept-website/assets/college-bg.jpg">
+    <meta property="og:site_name" content="Krishnagar Government College Statistics Department">
+
+    <!-- Twitter Card Tags (for sharing on Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Academic Programs (Major & Minor) | KGC Statistics Department">
+    <meta name="twitter:description" content="Explore the comprehensive B.Sc. Statistics Major and Minor programs at Krishnagar Government College.">
+    <meta name="twitter:image" content="https://i4002rfan.github.io/stats-dept-website/assets/college-bg.jpg">
+
+    <!-- =================================================================
+         Favicon and Stylesheets
+         ================================================================= -->
+    <link rel="icon" href="assets/Logo_1.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/tailwind.config.js"></script>
+
+    <!-- =================================================================
+         Structured Data (JSON-LD for Rich Snippets)
+         ================================================================= -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Academic Programs - KGC Statistics Department",
+      "url": "https://i4002rfan.github.io/stats-dept-website/programs.html",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "Krishnagar Government College Statistics Department",
+        "url": "https://i4002rfan.github.io/stats-dept-website/"
+      },
+      "mainEntity": [
+        {
+          "@type": "EducationalOccupationalProgram",
+          "name": "Bachelor of Science (B.Sc.) in Statistics - Major",
+          "description": "A comprehensive 4-year undergraduate program focusing on core and advanced statistical concepts, aligned with NEP 2020.",
+          "provider": { "@type": "CollegeOrUniversity", "name": "Krishnagar Government College", "department": { "@type": "CollegeOrUniversity", "name": "Department of Statistics" } },
+          "programType": "Major", "timeToComplete": "P4Y", "educationalCredentialAwarded": "Bachelor of Science"
+        },
+        {
+          "@type": "EducationalOccupationalProgram",
+          "name": "Bachelor of Science (B.Sc.) with Statistics - Minor",
+          "description": "A 3-year program for students wishing to gain a solid foundation in statistical methods as a minor subject, complementing their major field of study.",
+          "provider": { "@type": "CollegeOrUniversity", "name": "Krishnagar Government College", "department": { "@type": "CollegeOrUniversity", "name": "Department of Statistics" } },
+          "programType": "Minor", "timeToComplete": "P3Y", "educationalCredentialAwarded": "Bachelor of Science"
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="bg-gray-50">
-    <!-- Header -->
+    <!-- =================================================================
+         Header Section
+         ================================================================= -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="flex items-center space-x-3">
-                    <img src="assets/logo1.png" alt="Department Logo" class="h-10 w-10">
+                    <img src="assets/Logo_1.png" alt="Department Logo for Krishnagar Government College Statistics" class="h-10 w-10">
                     <div>
                         <h1 class="text-xl font-bold text-gray-800">Statistics Department</h1>
                         <p class="text-xs text-gray-600">Krishnagar Government College</p>
@@ -27,10 +90,10 @@
                     <a href="programs.html" class="nav-link text-gray-700 font-medium">Programs</a>
                     <a href="people.html" class="nav-link text-gray-700 font-medium">People</a>
                     <a href="announcements.html" class="nav-link text-gray-700 font-medium">Announcements</a>
-                    <a href="events.html" class="nav-link text-gray-700 font-medium">Events</a>
+                    <a href="materials.html" class="nav-link text-gray-700 font-medium">Materials</a>
                     <a href="research.html" class="nav-link text-gray-700 font-medium">Research</a>
                 </nav>
-                <button id="mobile-menu-button" class="md:hidden text-gray-700"><i class="fas fa-bars text-2xl"></i></button>
+                <button id="mobile-menu-button" class="md:hidden text-gray-700" aria-controls="mobile-menu" aria-expanded="false"><i class="fas fa-bars text-2xl"></i></button>
             </div>
             <div id="mobile-menu" class="mobile-menu md:hidden mt-4 pb-4">
                 <div class="flex flex-col space-y-3">
@@ -39,7 +102,7 @@
                     <a href="programs.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Programs</a>
                     <a href="people.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">People</a>
                     <a href="announcements.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Announcements</a>
-                    <a href="events.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Events</a>
+                    <a href="materials.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Materials</a>
                     <a href="research.html" class="text-gray-700 font-medium py-2">Research</a>
                 </div>
             </div>
@@ -48,127 +111,209 @@
 
     <!-- Main Content -->
     <main>
+        <!-- =================================================================
+             Academic Programs Section
+             ================================================================= -->
         <section id="programs" class="py-16 bg-white">
             <div class="container mx-auto px-4">
+                <!-- Page Title -->
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Academic Programs</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive curriculum designed to build strong statistical foundations</p>
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Academic Programs</h1>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Our department offers a comprehensive B.Sc. Statistics Major program and a foundational Minor program, both designed as per NEP 2020 guidelines.</p>
                 </div>
                 
-                <div>
+                <div class="space-y-12">
+                    <!-- =================================================================
+                         B.Sc. in Statistics (Major) Section
+                         ================================================================= -->
                     <div class="data-card bg-primary-50 rounded-xl p-6 md:p-8">
                         <div class="flex items-start mb-6">
                             <div class="bg-primary-100 p-3 rounded-lg mr-4"><i class="fas fa-graduation-cap text-primary-600 text-2xl"></i></div>
                             <div>
-                                <h3 class="text-2xl font-bold text-gray-800">Bachelor of Science (B.Sc.)</h3>
-                                <p class="text-gray-600">3-Year Undergraduate Program</p>
+                                <h2 class="text-2xl font-bold text-gray-800">B.Sc. in Statistics (Major)</h2>
+                                <p class="text-gray-600">4-Year Undergraduate Program</p>
                             </div>
                         </div>
                         
                         <div class="space-y-4">
                             <!-- Year 1 -->
                             <div class="bg-white rounded-lg p-4">
-                                <h4 class="font-semibold text-lg text-gray-800 mb-3">Year 1: Semesters I & II</h4>
+                                <h3 class="font-semibold text-lg text-gray-800 mb-3">Year 1: Semesters I & II</h3>
                                 <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
                                     <!-- Semester 1 -->
-                                    <div>
+                                    <div class="flex flex-col h-full">
                                         <p class="font-medium text-primary-700 mb-2">Semester I</p>
-                                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Introduction to Statistics</li><li>Probability Theory</li></ul>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Descriptive Statistics (Theo & Prac)</li></ul></div>
                                         <div class="mt-3 grid grid-cols-2 gap-2">
-                                            <a href="assets/bsc-sem1-syllabus.pdf" download class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
-                                            <div class="relative">
-                                                <button data-dropdown-toggle="pyq-dropdown-sem1" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button>
-                                                <div id="pyq-dropdown-sem1" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200">
-                                                    <a href="assets/pyqs/bsc-sem1-2023.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a>
-                                                    <a href="assets/pyqs/bsc-sem1-2022.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2022</a>
-                                                </div>
-                                            </div>
+                                            <a href="assets/syllabus/Course-Structure-Syllabus-for-UG-Statistics-under-NEP-2020-wef-2023-24-1.pdf" download="KGC-Statistics-Major-Syllabus-Sem1-2.pdf" class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative"><button data-dropdown-toggle="pyq-dropdown-sem1" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button><div id="pyq-dropdown-sem1" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200"><a href="#" class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a></div></div>
                                         </div>
                                     </div>
                                     <!-- Semester 2 -->
-                                    <div>
+                                    <div class="flex flex-col h-full">
                                         <p class="font-medium text-primary-700 mb-2">Semester II</p>
-                                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Descriptive Statistics</li><li>Mathematical Methods</li></ul>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Probability and Probability Distributions (Theo & Prac)</li></ul></div>
                                         <div class="mt-3 grid grid-cols-2 gap-2">
-                                            <a href="assets/bsc-sem2-syllabus.pdf" download class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
-                                            <div class="relative">
-                                                <button data-dropdown-toggle="pyq-dropdown-sem2" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button>
-                                                <div id="pyq-dropdown-sem2" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200">
-                                                    <a href="assets/pyqs/bsc-sem2-2023.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a>
-                                                    <a href="assets/pyqs/bsc-sem2-2022.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2022</a>
-                                                </div>
-                                            </div>
+                                            <a href="assets/syllabus/Course-Structure-Syllabus-for-UG-Statistics-under-NEP-2020-wef-2023-24-1.pdf" download="KGC-Statistics-Major-Syllabus-Sem1-2.pdf" class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative"><button data-dropdown-toggle="pyq-dropdown-sem2" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button><div id="pyq-dropdown-sem2" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200"><a href="#" class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a></div></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                             <!-- Year 2 -->
                             <div class="bg-white rounded-lg p-4">
-                                <h4 class="font-semibold text-lg text-gray-800 mb-3">Year 2: Semesters III & IV</h4>
+                                <h3 class="font-semibold text-lg text-gray-800 mb-3">Year 2: Semesters III & IV</h3>
                                 <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
-                                    <!-- Semester 3 -->
-                                    <div>
+                                     <!-- Semester 3 -->
+                                    <div class="flex flex-col h-full">
                                         <p class="font-medium text-primary-700 mb-2">Semester III</p>
-                                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Statistical Inference</li><li>Sampling Theory</li></ul>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Linear Algebra and Numerical Analysis (Theo & Prac)</li></ul></div>
                                         <div class="mt-3 grid grid-cols-2 gap-2">
-                                            <a href="assets/bsc-sem3-syllabus.pdf" download class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
-                                            <div class="relative">
-                                                <button data-dropdown-toggle="pyq-dropdown-sem3" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button>
-                                                <div id="pyq-dropdown-sem3" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200">
-                                                    <a href="assets/pyqs/bsc-sem3-2023.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a>
-                                                </div>
-                                            </div>
+                                            <a href="assets/syllabus/sem3.pdf" download="KGC-Statistics-Major-Syllabus-Sem3.pdf" class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative"><button data-dropdown-toggle="pyq-dropdown-sem3" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button><div id="pyq-dropdown-sem3" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200"><a href="#" class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2024</a></div></div>
                                         </div>
                                     </div>
                                     <!-- Semester 4 -->
-                                    <div>
+                                    <div class="flex flex-col h-full">
                                         <p class="font-medium text-primary-700 mb-2">Semester IV</p>
-                                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Regression Analysis</li><li>Computer Applications</li></ul>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Inference-I and Sampling Distribution (Theo & Prac)</li><li>SQC and Demography (Theo & Prac)</li></ul></div>
                                         <div class="mt-3 grid grid-cols-2 gap-2">
-                                            <a href="assets/bsc-sem4-syllabus.pdf" download class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
-                                            <div class="relative">
-                                                <button data-dropdown-toggle="pyq-dropdown-sem4" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button>
-                                                <div id="pyq-dropdown-sem4" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200">
-                                                    <a href="assets/pyqs/bsc-sem4-2023.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a>
-                                                </div>
-                                            </div>
+                                            <a href="assets/syllabus/sem4.pdf" download="KGC-Statistics-Major-Syllabus-Sem4.pdf" class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative"><button data-dropdown-toggle="pyq-dropdown-sem4" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button><div id="pyq-dropdown-sem4" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200"><a href="#" class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2024</a></div></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
                             <!-- Year 3 -->
                             <div class="bg-white rounded-lg p-4">
-                                <h4 class="font-semibold text-lg text-gray-800 mb-3">Year 3: Semesters V & VI</h4>
+                                <h3 class="font-semibold text-lg text-gray-800 mb-3">Year 3: Semesters V & VI</h3>
                                 <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
                                     <!-- Semester 5 -->
-                                    <div>
+                                    <div class="flex flex-col h-full">
                                         <p class="font-medium text-primary-700 mb-2">Semester V</p>
-                                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Multivariate Analysis</li><li>Design of Experiments</li></ul>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Inference-II and Large Sample Theory (Theo & Prac)</li><li>Survey Sampling and Official Statistics (Theo & Prac)</li></ul></div>
                                         <div class="mt-3 grid grid-cols-2 gap-2">
-                                            <a href="assets/bsc-sem5-syllabus.pdf" download class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
-                                            <div class="relative">
-                                                <button data-dropdown-toggle="pyq-dropdown-sem5" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button>
-                                                <div id="pyq-dropdown-sem5" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200">
-                                                    <a href="assets/pyqs/bsc-sem5-2023.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a>
-                                                </div>
-                                            </div>
+                                            <a href="assets/syllabus/sem5.pdf" download="KGC-Statistics-Major-Syllabus-Sem5.pdf" class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative"><button data-dropdown-toggle="pyq-dropdown-sem5" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button><div id="pyq-dropdown-sem5" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200"><a href="#" class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2025</a></div></div>
                                         </div>
                                     </div>
                                     <!-- Semester 6 -->
-                                    <div>
+                                    <div class="flex flex-col h-full">
                                         <p class="font-medium text-primary-700 mb-2">Semester VI</p>
-                                        <ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Time Series Analysis</li><li>Project Work</li></ul>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Multivariate Analysis and Nonparametric Techniques</li><li>Linear Models and Design of Experiments</li><li>Economic Statistics (Theo & Prac)</li></ul></div>
                                         <div class="mt-3 grid grid-cols-2 gap-2">
-                                            <a href="assets/bsc-sem6-syllabus.pdf" download class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
-                                            <div class="relative">
-                                                <button data-dropdown-toggle="pyq-dropdown-sem6" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button>
-                                                <div id="pyq-dropdown-sem6" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200">
-                                                    <a href="assets/pyqs/bsc-sem6-2023.pdf" download class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a>
-                                                </div>
-                                            </div>
+                                            <a href="assets/syllabus/sem6.pdf" download="KGC-Statistics-Major-Syllabus-Sem6.pdf" class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative"><button data-dropdown-toggle="pyq-dropdown-sem6" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-primary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button><div id="pyq-dropdown-sem6" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200"><a href="#" class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2025</a></div></div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Year 4 -->
+                            <div class="bg-white rounded-lg p-4">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-3">Year 4: Semesters VII & VIII</h3>
+                                <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                                    <!-- Semester 7 -->
+                                    <div class="flex flex-col h-full">
+                                        <p class="font-medium text-primary-700 mb-2">Semester VII</p>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Real Analysis</li><li>Measure Theory and Probability</li><li>R Programming (Prac)</li></ul></div>
+                                        <div class="mt-3 grid grid-cols-2 gap-2">
+                                            <a href="assets/syllabus/sem7.pdf" download="KGC-Statistics-Major-Syllabus-Sem7.pdf" class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative"><button class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs bg-gray-50 cursor-not-allowed" disabled><i class="fas fa-question-circle text-gray-400 mr-2"></i>PYQs</button></div>
+                                        </div>
+                                    </div>
+                                    <!-- Semester 8 -->
+                                    <div class="flex flex-col h-full">
+                                        <p class="font-medium text-primary-700 mb-2">Semester VIII</p>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Stochastic Process (Theo & Prac)</li><li>Machine Learning (Theo & Prac)</li><li>Econometrics and Time Series (Theo & Prac)</li><li>Operations Research (Optional)</li><li>Survival Analysis (Optional)</li></ul></div>
+                                        <div class="mt-3 grid grid-cols-2 gap-2">
+                                            <a href="assets/syllabus/sem8.pdf" download="KGC-Statistics-Major-Syllabus-Sem8.pdf" class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-primary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative"><button class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs bg-gray-50 cursor-not-allowed" disabled><i class="fas fa-question-circle text-gray-400 mr-2"></i>PYQs</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- =================================================================
+                         B.Sc. with Statistics (Minor) Section
+                         ================================================================= -->
+                    <div class="data-card bg-secondary-50 rounded-xl p-6 md:p-8">
+                        <div class="flex items-start mb-6">
+                            <div class="bg-secondary-100 p-3 rounded-lg mr-4"><i class="fas fa-book-reader text-secondary-600 text-2xl"></i></div>
+                            <div>
+                                <h2 class="text-2xl font-bold text-gray-800">B.Sc. with Statistics (Minor)</h2>
+                                <p class="text-gray-600">3-Year Undergraduate Program</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 text-sm mb-6">This program is ideal for students majoring in other subjects who want to build a strong foundation in statistical methods and data analysis to complement their primary field of study.</p>
+                        
+                        <div class="space-y-4">
+                            <!-- Year 1 -->
+                            <div class="bg-white rounded-lg p-4">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-3">Year 1: Semesters I & II</h3>
+                                <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                                    <!-- Semester 1 -->
+                                    <div class="flex flex-col h-full">
+                                        <p class="font-medium text-secondary-700 mb-2">Semester I</p>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Statistical Methods (Theo & Prac)</li></ul></div>
+                                        <div class="mt-3 grid grid-cols-2 gap-2">
+                                            <a href="assets/syllabus/Course-Structure-Syllabus-for-UG-Statistics-under-NEP-2020-wef-2023-24-1.pdf" download="KGC-Statistics-Minor-Syllabus.pdf" class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-secondary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative"><button data-dropdown-toggle="pyq-dropdown-minor-sem1" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-secondary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button><div id="pyq-dropdown-minor-sem1" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200"><a href="#" class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a></div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Semester 2 -->
+                                    <div class="flex flex-col h-full">
+                                        <p class="font-medium text-secondary-700 mb-2">Semester II</p>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Same as Semester I</li></ul></div>
+                                        <div class="mt-3 grid grid-cols-2 gap-2">
+                                            <a href="assets/syllabus/Course-Structure-Syllabus-for-UG-Statistics-under-NEP-2020-wef-2023-24-1.pdf" download="KGC-Statistics-Minor-Syllabus.pdf" class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-secondary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative"><button data-dropdown-toggle="pyq-dropdown-minor-sem2" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-secondary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button><div id="pyq-dropdown-minor-sem2" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200"><a href="#" class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2023</a></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Year 2 -->
+                            <div class="bg-white rounded-lg p-4">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-3">Year 2: Semesters III & IV</h3>
+                                <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                                    <!-- Semester 3 -->
+                                    <div class="flex flex-col h-full">
+                                        <p class="font-medium text-secondary-700 mb-2">Semester III</p>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Basic Probability and Probability Distributions (Theo & Prac)</li></ul></div>
+                                        <div class="mt-3 grid grid-cols-2 gap-2">
+                                            <a href="assets/syllabus/Course-Structure-Syllabus-for-UG-Statistics-under-NEP-2020-wef-2023-24-1.pdf" download="KGC-Statistics-Minor-Syllabus.pdf" class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-secondary-600 mr-2"></i>Syllabus</a>
+                                             <div class="relative"><button data-dropdown-toggle="pyq-dropdown-minor-sem3" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-secondary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button><div id="pyq-dropdown-minor-sem3" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200"><a href="#" class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2024</a></div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Semester 4 -->
+                                    <div class="flex flex-col h-full">
+                                        <p class="font-medium text-secondary-700 mb-2">Semester IV</p>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Same as Semester III</li></ul></div>
+                                        <div class="mt-3 grid grid-cols-2 gap-2">
+                                            <a href="assets/syllabus/Course-Structure-Syllabus-for-UG-Statistics-under-NEP-2020-wef-2023-24-1.pdf" download="KGC-Statistics-Minor-Syllabus.pdf" class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-secondary-600 mr-2"></i>Syllabus</a>
+                                             <div class="relative"><button data-dropdown-toggle="pyq-dropdown-minor-sem4" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-secondary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button><div id="pyq-dropdown-minor-sem4" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200"><a href="#" class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2024</a></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Year 3 -->
+                            <div class="bg-white rounded-lg p-4">
+                                <h3 class="font-semibold text-lg text-gray-800 mb-3">Year 3: Semesters V & VI</h3>
+                                 <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                                    <!-- Semester 5 -->
+                                    <div class="flex flex-col h-full">
+                                        <p class="font-medium text-secondary-700 mb-2">Semester V</p>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li>Applied Statistics (Theo & Prac)</li><li>Sampling Distribution (Theo)</li></ul></div>
+                                        <div class="mt-3 grid grid-cols-2 gap-2">
+                                            <a href="assets/syllabus/Course-Structure-Syllabus-for-UG-Statistics-under-NEP-2020-wef-2023-24-1.pdf" download="KGC-Statistics-Minor-Syllabus.pdf" class="download-card border border-gray-200 rounded-lg p-2 flex items-center justify-center text-xs hover:bg-gray-100"><i class="fas fa-file-alt text-secondary-600 mr-2"></i>Syllabus</a>
+                                            <div class="relative"><button data-dropdown-toggle="pyq-dropdown-minor-sem5" class="download-card w-full text-left border border-gray-200 rounded-lg p-2 flex items-center text-xs hover:bg-gray-100"><i class="fas fa-question-circle text-secondary-600 mr-2"></i>PYQs<i class="fas fa-chevron-down text-xs ml-auto"></i></button><div id="pyq-dropdown-minor-sem5" class="hidden pyq-dropdown absolute z-20 bg-white rounded-md shadow-lg mt-1 w-full border border-gray-200"><a href="#" class="block px-3 py-2 text-xs text-gray-700 hover:bg-gray-100">PYQ 2025</a></div></div>
+                                        </div>
+                                    </div>
+                                    <!-- Semester 6 -->
+                                    <div class="flex flex-col h-full">
+                                        <p class="font-medium text-secondary-700 mb-2">Semester VI</p>
+                                        <div class="flex-grow"><ul class="text-sm text-gray-700 list-disc list-inside space-y-1"><li><i>Minor course concludes in Semester V</i></li></ul></div>
                                     </div>
                                 </div>
                             </div>
@@ -179,11 +324,50 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white pt-16 pb-8">
-        <!-- Footer content goes here -->
+    <!-- =================================================================
+         Footer Section
+         ================================================================= -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+                <!-- Footer Column 1 -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="assets/Logo_1.png" alt="Department Logo for Krishnagar Government College Statistics" class="h-10 w-10">
+                        <div><h3 class="text-xl font-bold">Statistics Department</h3><p class="text-gray-400 text-sm">Krishnagar Government College</p></div>
+                    </div>
+                    <p class="text-gray-400 text-sm">Empowering students with analytical thinking and data-driven decision making skills.</p>
+                </div>
+                <!-- Footer Column 2 & 3 -->
+                <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-3">
+                            <li><a href="materials.html" class="text-gray-400 hover:text-white transition">Study Materials</a></li>
+                            <li><a href="research.html" class="text-gray-400 hover:text-white transition">Research</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Programs</h4>
+                        <ul class="space-y-3">
+                            <li><a href="programs.html" class="text-gray-400 hover:text-white transition">B.Sc. Statistics (Major/Minor)</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-primary-400"></i><span class="text-gray-400 text-sm">Krishnagar Govt. College, Krishnagar, Nadia, West Bengal 741101</span></li>
+                            <li class="flex items-center"><i class="fas fa-envelope mr-3 text-primary-400"></i><a href="mailto:ranasubrata@gmail.com" class="text-gray-400 text-sm hover:text-white">ranasubrata@gmail.com (HOD)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-6"><p class="text-gray-500 text-sm text-center">&copy; 2025 Krishnagar Government College. All rights reserved.</p></div>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Deferred script for global functionality -->
+    <script src="js/script.js" defer></script>
 </body>
 </html>

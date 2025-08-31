@@ -1,175 +1,320 @@
 <!DOCTYPE html>
+<!-- The `lang` attribute is important for accessibility and SEO. -->
 <html lang="en">
 <head>
+    <!-- Basic meta tags for character set and viewport responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistics Department - Krishnagar Government College</title>
+    
+    <!-- =================================================================
+         SEO (Search Engine Optimization) and Social Media Meta Tags 
+         ================================================================= -->
+    <!-- Primary Title: Appears in the browser tab and search results -->
+    <title>Statistics Department - Krishnagar Government College (KGC)</title>
+    <!-- Description: A short summary shown in search engine results -->
+    <meta name="description" content="Welcome to the official website of the Statistics Department at Krishnagar Government College (KGC), affiliated with Kalyani University. Discover our B.Sc. Statistics program, faculty, syllabus, and admission details.">
+    <!-- Keywords: Terms users might search for to find this page -->
+    <meta name="keywords" content="Krishnagar Government College Statistics Department, KGC Statistics Department, B.Sc. Statistics Krishnagar Government College, Statistics Department Krishnagar Govt College, Statistics syllabus Krishnagar Government College, KGC Statistics admission, Undergraduate statistics program KGC, Statistics courses in Nadia, Kalyani University statistics syllabus, Faculty of Statistics KGC, Krishnagar Government College, Krishnanagar Government College, KGC, KGC Nadia, Krishnagar Govt College, Statistics college in Krishnagar">
+    <!-- Robots: Tells search engines they can index this page -->
+    <meta name="robots" content="index, follow">
+    <!-- Canonical URL: The preferred URL for this page, preventing duplicate content issues -->
+    <link rel="canonical" href="https://i4002rfan.github.io/stats-dept-website/">
+    <!-- Author of the website content -->
+    <meta name="author" content="Department of Statistics, Krishnagar Government College">
+
+    <!-- Open Graph Tags (for sharing on Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Statistics Department | Krishnagar Government College">
+    <meta property="og:description" content="Explore the B.Sc. Statistics program, faculty, research, and resources at the Krishnagar Government College Statistics Department.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://i4002rfan.github.io/stats-dept-website/">
+    <meta property="og:image" content="https://i4002rfan.github.io/stats-dept-website/assets/college-bg.jpg">
+    <meta property="og:image:alt" content="Krishnagar Government College Campus">
+    <meta property="og:site_name" content="KGC Statistics Department">
+    
+    <!-- Twitter Card Tags (for sharing on Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Statistics Department | Krishnagar Government College">
+    <meta name="twitter:description" content="Explore the B.Sc. Statistics program, faculty, research, and resources at the Krishnagar Government College Statistics Department.">
+    <meta name="twitter:image" content="https://i4002rfan.github.io/stats-dept-website/assets/college-bg.jpg">
+    <meta name="twitter:image:alt" content="Krishnagar Government College Campus">
+
+    <!-- =================================================================
+         Favicon and Stylesheets
+         ================================================================= -->
+    <!-- Favicon: The icon shown in the browser tab -->
+    <link rel="icon" href="assets/Logo_1.png" type="image/png">
+
+    <!-- External Libraries: Tailwind CSS for styling and Font Awesome for icons -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Local Stylesheet and Tailwind Config -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/tailwind.config.js"></script>
+
+    <!-- =================================================================
+         Structured Data (JSON-LD for Rich Snippets in Google)
+         ================================================================= -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Department",
+      "name": "Department of Statistics, Krishnagar Government College",
+      "url": "https://i4002rfan.github.io/stats-dept-website/",
+      "parentOrganization": {
+        "@type": "CollegeOrUniversity",
+        "name": "Krishnagar Government College",
+        "url": "https://www.krishnagargovtcollege.org/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Krishnagar",
+          "addressLocality": "Nadia",
+          "addressRegion": "West Bengal",
+          "postalCode": "741101",
+          "addressCountry": "IN"
+        },
+        "logo": "https://i4002rfan.github.io/stats-dept-website/assets/Logo_1.png"
+      },
+      "knowsAbout": [
+        "Statistics", "Data Science", "B.Sc. Statistics", "Undergraduate Statistics Program", "Kalyani University Syllabus"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Head of Department",
+        "email": "ranasubrata@gmail.com",
+        "name": "Dr. Subrata Rana"
+      }
+    }
+    </script>
 </head>
 <body class="bg-gray-50">
-    <!-- Header -->
+
+    <!-- =================================================================
+         Header Section: Contains logo, department name, and navigation.
+         It's sticky to stay at the top on scroll.
+         ================================================================= -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
+                <!-- Logo and Department Title -->
                 <a href="index.html" class="flex items-center space-x-3">
-                    <img src="assets/logo1.png" alt="Department Logo" class="h-10 w-10">
+                    <img src="assets/Logo_1.png" alt="KGC Statistics Department Logo" class="h-10 w-10">
                     <div>
                         <h1 class="text-xl font-bold text-gray-800">Statistics Department</h1>
                         <p class="text-xs text-gray-600">Krishnagar Government College</p>
                     </div>
                 </a>
-                <nav class="hidden md:flex space-x-8">
-                    <a href="index.html" class="nav-link text-gray-700 font-medium current-page">Home</a>
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8" aria-label="Main navigation">
+                    <a href="index.html" class="nav-link text-gray-700 font-medium">Home</a>
                     <a href="about.html" class="nav-link text-gray-700 font-medium">About</a>
                     <a href="programs.html" class="nav-link text-gray-700 font-medium">Programs</a>
                     <a href="people.html" class="nav-link text-gray-700 font-medium">People</a>
                     <a href="announcements.html" class="nav-link text-gray-700 font-medium">Announcements</a>
-                    <a href="events.html" class="nav-link text-gray-700 font-medium">Events</a>
+                    <a href="materials.html" class="nav-link text-gray-700 font-medium">Materials</a>
                     <a href="research.html" class="nav-link text-gray-700 font-medium">Research</a>
                 </nav>
-                <button id="mobile-menu-button" class="md:hidden text-gray-700"><i class="fas fa-bars text-2xl"></i></button>
+                <!-- Mobile Menu Button (Hamburger Icon) -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open main menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
+            <!-- Mobile Menu (hidden by default) -->
             <div id="mobile-menu" class="mobile-menu md:hidden mt-4 pb-4">
-                <div class="flex flex-col space-y-3">
+                 <div class="flex flex-col space-y-3">
                     <a href="index.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Home</a>
                     <a href="about.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">About</a>
                     <a href="programs.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Programs</a>
                     <a href="people.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">People</a>
                     <a href="announcements.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Announcements</a>
-                    <a href="events.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Events</a>
+                    <a href="materials.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Materials</a>
                     <a href="research.html" class="text-gray-700 font-medium py-2">Research</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-background">
-        <!-- This container now controls the height and centering of the content -->
-        <div class="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center text-center text-white min-h-[60vh] md:min-h-[70vh]">
-            
-            <!-- This div is the hover target that contains everything -->
-            <div class="hero-content-wrapper p-8">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Department of Statistics</h1>
-                <p class="text-xl text-primary-200 mb-6">Krishnagar Government College</p>
-                
-                <!-- This is the description that will be revealed on hover -->
-                <div class="hero-description">
-                    <p class="text-primary-50 mb-8 max-w-3xl mx-auto">The Department of Statistics, Krishnagar Government College, came into existence in 1981. From 2018- 2022 under the Choice Based Credit System (CBCS), the department had been offering only General course in Statistics. This course provides an exciting opportunity to engage with the quantitative aspects of the social, biological and physical sciences. Generally students from Mathematics, Economics and Physics departments opt for this subject. Since its inception, the department strives hard to maintain its distinctive competence. From the 2023-24 session, both Major and Minor courses in Statistics shall be offered by the department, following the regulations of the University of Kalyani, in compliance with the NEP 2020.</p>
-                </div>
+    <!-- Main Content of the Page -->
+    <main>
 
-                <div class="flex flex-wrap gap-4 justify-center">
-                    <a href="programs.html" class="bg-white hover:bg-primary-100 text-primary-700 font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg">View Programs</a>
-                    <a href="events.html" class="bg-transparent hover:bg-white/20 text-white border-2 border-white font-medium py-3 px-6 rounded-lg transition duration-300">Events</a>
+        <!-- =================================================================
+             Hero Section: The main banner with an interactive hover effect.
+             ================================================================= -->
+        <section class="hero-background" aria-labelledby="hero-title">
+            <div class="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center text-center text-white min-h-[60vh] md:min-h-[70vh]">
+                <div class="hero-content-wrapper p-8">
+                    <h1 id="hero-title" class="text-4xl md:text-5xl font-bold mb-4">Department of Statistics</h1>
+                    <p class="text-xl text-primary-200 mb-6">Krishnagar Government College, Nadia</p>
+                    <div class="hero-description">
+                        <p class="text-primary-50 mb-8 max-w-3xl mx-auto">Established in 1981, the Department of Statistics at Krishnagar Government College offers a top-tier undergraduate statistics program. Our curriculum provides an exciting opportunity to engage with the quantitative aspects of the social, biological, and physical sciences.</p>
+                    </div>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <a href="programs.html" class="bg-white hover:bg-primary-100 text-primary-700 font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg">View B.Sc. Programs</a>
+                        <a href="materials.html" class="bg-transparent hover:bg-white/20 text-white border-2 border-white font-medium py-3 px-6 rounded-lg transition duration-300">Access Study Materials</a>
+                    </div>
                 </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- =================================================================
+             Faculty Messages Section
+             ================================================================= -->
+        <section id="faculty-messages" class="py-16 bg-white" aria-labelledby="faculty-messages-title">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 id="faculty-messages-title" class="text-3xl font-bold text-gray-800 mb-4">Messages from Our Faculty</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Guidance and inspiration from the dedicated professors at the KGC Statistics Department.</p>
+                </div>
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    <!-- HOD's Message -->
+                    <div class="faculty-message-card">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="assets/subrata-rana.jpg" alt="Photo of Dr. Subrata Rana, Head of Statistics Department at Krishnagar Government College." class="w-20 h-20 rounded-full object-cover border-2 border-primary-200">
+                            <div>
+                                <h3 class="font-bold text-gray-800 text-lg">Dr. Subrata Rana</h3>
+                                <p class="text-primary-700 font-medium text-sm">Assistant Professor (HOD)</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-700 text-sm italic">"Welcome to the Department of Statistics. We are committed to fostering a vibrant academic environment where students can explore the power of data and are equipped to make a meaningful impact in the world."</blockquote>
+                    </div>
+                    <!-- Other Faculty's Message -->
+                    <div class="faculty-message-card">
+                        <div class="flex items-center gap-4 mb-4">
+                            <img src="assets/goutam-barman.jpg" alt="Photo of Dr. Goutam Barman, Assistant Professor of Statistics at Krishnagar Government College." class="w-20 h-20 rounded-full object-cover border-2 border-primary-200">
+                            <div>
+                                <h3 class="font-bold text-gray-800 text-lg">Dr. Goutam Barman</h3>
+                                <p class="text-primary-700 font-medium text-sm">Assistant Professor</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-700 text-sm italic">"Our focus is on blending theoretical knowledge with practical, applied statistics. We strive to provide students with the analytical tools and critical thinking skills necessary for a successful career in a data-driven future."</blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Mini Announcements Section -->
-    <section id="announcements" class="py-16 bg-white">
+        <!-- =================================================================
+             Dynamic Announcements Section: Loaded via home.js
+             ================================================================= -->
+        <section id="announcements" class="py-16 bg-gray-50" aria-labelledby="announcements-title">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 id="announcements-title" class="text-3xl font-bold text-gray-800 mb-4">Latest Announcements</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Stay updated with KGC Statistics departmental news, KGC statistics admission notices, and academic updates.</p>
+                </div>
+                <!-- This grid is populated by home.js with the latest announcements -->
+                <div id="home-announcements-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 max-w-4xl mx-auto" aria-live="polite">
+                    <!-- Skeletons for a loading effect while JS fetches data -->
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 animate-pulse"><div class="h-4 bg-gray-200 rounded w-3/4 mb-4"></div><div class="h-3 bg-gray-200 rounded w-full mb-2"></div><div class="h-3 bg-gray-200 rounded w-5/6"></div></div>
+                    <div class="bg-white border border-gray-200 rounded-xl p-6 animate-pulse"><div class="h-4 bg-gray-200 rounded w-3/4 mb-4"></div><div class="h-3 bg-gray-200 rounded w-full mb-2"></div><div class="h-3 bg-gray-200 rounded w-5/6"></div></div>
+                </div>
+                <div class="text-center">
+                    <a href="announcements.html" class="inline-block bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">View All Announcements</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             Gallery Section: Interactive tabbed gallery.
+             ================================================================= -->
+        <section id="gallery" class="py-16 bg-white" aria-labelledby="gallery-title">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 id="gallery-title" class="text-3xl font-bold text-gray-800 mb-4">Our Gallery</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">A glimpse into our department and college life at Krishnagar Govt College.</p>
+                </div>
+
+                <!-- Gallery Tab Navigation -->
+                <div id="gallery-tabs" class="gallery-tabs">
+                    <button class="gallery-tab-btn active" data-category="events">Departmental Events</button>
+                </div>
+
+                <!-- Gallery Panes -->
+                <div id="gallery-panes">
+                    <!-- Departmental Events Pane -->
+                    <div id="pane-events" class="gallery-pane active">
+                        <div class="gallery-grid">
+                            <a href="assets/gallery/national statistics day.jpg" target="_blank" class="gallery-item" data-caption="National Statistics Day celebration with faculty and students.">
+                                <img src="assets/gallery/national statistics day.jpg" alt="KGC Statistics Department celebrating National Statistics Day">
+                                <div class="gallery-caption">National Statistics Day Celebration</div>
+                            </a>
+                            <!-- Add more event photos here using the same structure -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =================================================================
+         Footer Section
+         ================================================================= -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6" aria-labelledby="footer-title">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Latest Announcements</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Stay updated with departmental news and important notices</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div class="announcement-card bg-white border border-gray-200 rounded-xl p-6">
-                    <div class="flex justify-between items-start mb-3">
-                        <h3 class="font-bold text-gray-800">Semester Examination Schedule</h3>
-                        <span class="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded">Important</span>
-                    </div>
-                    <p class="text-gray-700 text-sm mb-4">Final examination schedule for the current semester has been published. Students are advised to check their timetables.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-xs text-gray-500">Published: August 1, 2025</span>
-                        <a href="announcements.html" class="text-primary-600 text-sm font-medium">Read More</a>
-                    </div>
-                </div>
-                <div class="announcement-card bg-white border border-gray-200 rounded-xl p-6">
-                    <div class="flex justify-between items-start mb-3">
-                        <h3 class="font-bold text-gray-800">Research Grant Applications</h3>
-                        <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">Opportunity</span>
-                    </div>
-                    <p class="text-gray-700 text-sm mb-4">Applications are now open for internal research grants. Deadline for submission is September 15, 2025.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-xs text-gray-500">Published: July 28, 2025</span>
-                        <a href="announcements.html" class="text-primary-600 text-sm font-medium">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="announcements.html" class="inline-block bg-primary-600 hover:bg-primary-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">View All Announcements</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <!-- Footer (Corrected for Symmetry and Padding) -->
-    <footer class="bg-gray-900 text-white pt-12 pb-6">
-        <div class="container mx-auto px-4">
-            <!-- Main grid for two sections: Info and Links -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-
                 <!-- Column 1: Department Info -->
                 <div class="md:col-span-1">
                     <div class="flex items-center space-x-3 mb-4">
-                        <img src="assets/logo1.png" alt="Department Logo" class="h-10 w-10">
+                        <img src="assets/Logo_1.png" alt="Statistics Department Krishnagar Government College Logo" class="h-10 w-10">
                         <div>
-                            <h3 class="text-xl font-bold">Statistics Department</h3>
+                            <h3 id="footer-title" class="text-xl font-bold">Statistics Department</h3>
                             <p class="text-gray-400 text-sm">Krishnagar Government College</p>
                         </div>
                     </div>
-                    <p class="text-gray-400 text-sm">Empowering students with analytical thinking and data-driven decision making skills for the modern world.</p>
+                    <p class="text-gray-400 text-sm">Empowering students with analytical thinking and data-driven decision making skills.</p>
                 </div>
 
-                <!-- Column 2: Contains a nested grid for all the links, making them balanced -->
+                <!-- Column 2 & 3: Links and Contact -->
                 <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-8">
-                    
-                    <!-- Quick Links -->
                     <div>
                         <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                         <ul class="space-y-3">
-                            <li><a href="events.html" class="text-gray-400 hover:text-white transition">Upcoming Events</a></li>
-                            <li><a href="research.html" class="text-gray-400 hover:text-white transition">Research Publications</a></li>
+                            <li><a href="materials.html" class="text-gray-400 hover:text-white transition">Study Materials</a></li>
+                            <li><a href="research.html" class="text-gray-400 hover:text-white transition">Research</a></li>
+                            <li><a href="about.html" class="text-gray-400 hover:text-white transition">About KGC Statistics</a></li>
                         </ul>
                     </div>
-
-                    <!-- Programs -->
                     <div>
                         <h4 class="text-lg font-semibold mb-4">Programs</h4>
                         <ul class="space-y-3">
-                            <li><a href="programs.html" class="text-gray-400 hover:text-white transition">B.Sc. Statistics</a></li>
+                            <li><a href="programs.html" class="text-gray-400 hover:text-white transition">B.Sc. Statistics (Major/Minor)</a></li>
                         </ul>
                     </div>
-
-                    <!-- Contact Us -->
                     <div>
                         <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
-                        <ul class="space-y-4">
-                            <li class="flex items-start">
-                                <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary-400"></i>
-                                <span class="text-gray-400 text-sm">Krishnagar Govt. College, Krishnagar, Nadia, West Bengal 741101</span>
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-envelope mr-3 text-primary-400"></i>
-                                <span class="text-gray-400 text-sm">ranasubrata@gmail.com (HOD)</span>
-                            </li>
-                        </ul>
+                        <address class="not-italic">
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary-400" aria-hidden="true"></i>
+                                    <span class="text-gray-400 text-sm">Krishnagar Govt. College, Krishnagar, Nadia, West Bengal 741101</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-envelope mr-3 text-primary-400" aria-hidden="true"></i>
+                                    <a href="mailto:ranasubrata@gmail.com" class="text-gray-400 text-sm hover:text-white">ranasubrata@gmail.com (HOD)</a>
+                                </li>
+                            </ul>
+                        </address>
                     </div>
                 </div>
             </div>
 
-            <!-- Copyright section with reduced top padding -->
+            <!-- Developer Credit -->
+            <div class="text-center text-xs text-gray-500 mb-6 mt-10">
+                <p>This website is designed and maintained by Irfan Ukil. For any queries, contact: <a href="mailto:i4002rfan@gmail.com" class="hover:underline text-primary-400">i4002rfan@gmail.com</a></p>
+            </div>
+
+            <!-- Copyright Section -->
             <div class="border-t border-gray-800 pt-6">
                 <p class="text-gray-500 text-sm text-center">&copy; 2025 Krishnagar Government College. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
-    <script src="js/script.js"></script>
+    
+    <!-- =================================================================
+         Deferred Scripts for Performance
+         ================================================================= -->
+    <!-- `defer` ensures these scripts run after the HTML is parsed, improving page load time. -->
+    <script src="js/announcement-data.js" defer></script>
+    <script src="js/home.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

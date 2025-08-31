@@ -3,34 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our People - Statistics Department</title>
+    
+    <!-- =================================================================
+         SEO (Search Engine Optimization) and Social Media Meta Tags 
+         ================================================================= -->
+    <title>Faculty & Students | KGC Statistics Department | Krishnagar Government College</title>
+    <meta name="description" content="Meet the dedicated faculty and students of the Statistics Department at Krishnagar Government College (KGC). View profiles of our esteemed professors, including Dr. Subrata Rana and Dr. Goutam Barman.">
+    <meta name="keywords" content="Faculty of Statistics KGC, Krishnagar Government College Statistics Department, statistics professors Krishnagar, Dr. Subrata Rana statistics, Dr. Goutam Barman KGC, statistics students Krishnagar, KGC Nadia faculty, top science departments in Krishnagar">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://i4002rfan.github.io/stats-dept-website/people.html">
+    <meta name="author" content="Department of Statistics, Krishnagar Government College">
+
+    <!-- Open Graph Tags (for sharing on Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Faculty & Students | KGC Statistics Department">
+    <meta property="og:description" content="Meet the dedicated faculty, including Dr. Subrata Rana (HOD) and Dr. Goutam Barman, at the Krishnagar Government College Statistics Department.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://i4002rfan.github.io/stats-dept-website/people.html">
+    <meta property="og:image" content="https://i4002rfan.github.io/stats-dept-website/assets/subrata-rana.jpg">
+    <meta property="og:image:alt" content="A photo of Dr. Subrata Rana, Head of the Statistics Department at KGC">
+    <meta property="og:site_name" content="KGC Statistics Department">
+    
+    <!-- Twitter Card Tags (for sharing on Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Faculty & Students | KGC Statistics Department">
+    <meta name="twitter:description" content="Meet the dedicated faculty, including Dr. Subrata Rana (HOD) and Dr. Goutam Barman, at the Krishnagar Government College Statistics Department.">
+    <meta name="twitter:image" content="https://i4002rfan.github.io/stats-dept-website/assets/subrata-rana.jpg">
+    <meta name="twitter:image:alt" content="A photo of Dr. Subrata Rana, Head of the Statistics Department at KGC">
+
+    <!-- =================================================================
+         Favicon and Stylesheets
+         ================================================================= -->
+    <link rel="icon" href="assets/Logo_1.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/tailwind.config.js"></script>
+
+    <!-- =================================================================
+         Structured Data (JSON-LD for Rich Snippets)
+         ================================================================= -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Faculty and Students of the Statistics Department, Krishnagar Government College",
+      "url": "https://i4002rfan.github.io/stats-dept-website/people.html",
+      "description": "Profiles of the faculty members and information about the student body of the KGC Statistics Department.",
+      "mainEntity": [
+        {
+          "@type": "Person", "name": "Dr. Subrata Rana", "jobTitle": "Assistant Professor (HOD)",
+          "image": "https://i4002rfan.github.io/stats-dept-website/assets/subrata-rana.jpg",
+          "worksFor": { "@type": "Department", "name": "Department of Statistics, Krishnagar Government College" },
+          "knowsAbout": ["Bio-Statistics", "Missing data analysis", "Categorical data analysis"]
+        },
+        {
+          "@type": "Person", "name": "Dr. Goutam Barman", "jobTitle": "Assistant Professor",
+          "image": "https://i4002rfan.github.io/stats-dept-website/assets/goutam-barman.jpg",
+          "worksFor": { "@type": "Department", "name": "Department of Statistics, Krishnagar Government College" },
+          "knowsAbout": ["Applied Statistics", "Informatics", "Optimization", "Survival Analysis"]
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="bg-gray-50">
-    <!-- Header -->
+    <!-- =================================================================
+         Header Section
+         ================================================================= -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
                 <a href="index.html" class="flex items-center space-x-3">
-                    <img src="assets/logo1.png" alt="Department Logo" class="h-10 w-10">
+                    <img src="assets/Logo_1.png" alt="KGC Statistics Department Logo" class="h-10 w-10">
                     <div>
                         <h1 class="text-xl font-bold text-gray-800">Statistics Department</h1>
                         <p class="text-xs text-gray-600">Krishnagar Government College</p>
                     </div>
                 </a>
-                <nav class="hidden md:flex space-x-8">
+                <nav class="hidden md:flex space-x-8" aria-label="Main navigation">
                     <a href="index.html" class="nav-link text-gray-700 font-medium">Home</a>
                     <a href="about.html" class="nav-link text-gray-700 font-medium">About</a>
                     <a href="programs.html" class="nav-link text-gray-700 font-medium">Programs</a>
-                    <a href="people.html" class="nav-link text-gray-700 font-medium current-page">People</a>
+                    <a href="people.html" class="nav-link text-gray-700 font-medium">People</a>
                     <a href="announcements.html" class="nav-link text-gray-700 font-medium">Announcements</a>
-                    <a href="events.html" class="nav-link text-gray-700 font-medium">Events</a>
+                    <a href="materials.html" class="nav-link text-gray-700 font-medium">Materials</a>
                     <a href="research.html" class="nav-link text-gray-700 font-medium">Research</a>
                 </nav>
-                <button id="mobile-menu-button" class="md:hidden text-gray-700"><i class="fas fa-bars text-2xl"></i></button>
+                <button id="mobile-menu-button" class="md:hidden text-gray-700" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open main menu"><i class="fas fa-bars text-2xl"></i></button>
             </div>
             <div id="mobile-menu" class="mobile-menu md:hidden mt-4 pb-4">
                  <div class="flex flex-col space-y-3">
@@ -39,7 +98,7 @@
                     <a href="programs.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Programs</a>
                     <a href="people.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">People</a>
                     <a href="announcements.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Announcements</a>
-                    <a href="events.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Events</a>
+                    <a href="materials.html" class="text-gray-700 font-medium py-2 border-b border-gray-100">Materials</a>
                     <a href="research.html" class="text-gray-700 font-medium py-2">Research</a>
                 </div>
             </div>
@@ -48,110 +107,117 @@
 
     <!-- Main Content -->
     <main>
-        <section id="people" class="py-16 bg-gray-50">
+        <!-- =================================================================
+             People Section: Contains both faculty and students.
+             ================================================================= -->
+        <section id="people" class="py-16 bg-gray-50" aria-labelledby="people-title">
             <div class="container mx-auto px-4">
+                <!-- Page Title -->
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Our People</h2>
-                    <p class="text-gray-600 max-w-2xl mx-auto">Dedicated faculty and students committed to excellence</p>
+                    <h1 id="people-title" class="text-3xl font-bold text-gray-800 mb-4">Our People</h1>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Meet the dedicated faculty and bright students of the KGC Statistics Department, who are committed to academic and research excellence.</p>
                 </div>
                 
-                <!-- Updated Faculty Section -->
+                <!-- =================================================================
+                     Faculty Members Sub-section
+                     ================================================================= -->
                 <div class="mb-16">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-8 text-center">Faculty Members</h3>
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-8 text-center">Faculty Members</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        
-                        <!-- Dr. Subrata Rana -->
-                        <div class="faculty-card bg-white rounded-xl overflow-hidden shadow-sm p-6">
-                            <div class="flex items-center mb-4">
-                                <!-- =================== FIXED HERE =================== -->
-                                <img src="assets/SUBRATA RANA.jpg" alt="Photo of Dr. Subrata Rana" class="w-20 h-20 rounded-full mr-4 object-cover">
-                                <!-- ================================================ -->
+                        <!-- Faculty Card 1: Dr. Subrata Rana -->
+                        <div class="faculty-card bg-white rounded-xl overflow-hidden shadow-sm p-6 text-center md:text-left">
+                            <div class="flex flex-col md:flex-row items-center mb-4">
+                                <img src="assets/subrata-rana.jpg" alt="Dr. Subrata Rana, Head of Statistics Department at Krishnagar Government College" class="w-24 h-24 rounded-full md:mr-6 mb-4 md:mb-0 object-cover">
                                 <div>
-                                    <h4 class="font-bold text-gray-800 text-lg">Dr. Subrata Rana</h4>
+                                    <h3 class="font-bold text-gray-800 text-lg">Dr. Subrata Rana</h3>
                                     <p class="text-primary-600">Assistant Professor (HOD)</p>
                                 </div>
                             </div>
                             <p class="text-gray-700 text-sm mb-4"><strong>Specialization:</strong> Bio-Statistics, Missing data, Categorical data analysis.</p>
-                            <a href="assets/Subrata Rana.pdf" download class="download-card w-full text-center bg-primary-50 border border-primary-200 rounded-lg p-2 flex items-center justify-center text-sm hover:bg-primary-100">
-                                <i class="fas fa-file-pdf text-red-500 mr-2"></i>
-                                View Profile (PDF)
-                            </a>
+                            <a href="assets/Subrata Rana.pdf" download="Profile-Dr-Subrata-Rana-KGC-Statistics.pdf" class="download-card w-full text-center bg-primary-50 border border-primary-200 rounded-lg p-2 flex items-center justify-center text-sm hover:bg-primary-100"><i class="fas fa-file-pdf text-red-500 mr-2"></i>View Profile (PDF)</a>
                         </div>
-
-                        <!-- Dr. Goutam Barman -->
-                        <div class="faculty-card bg-white rounded-xl overflow-hidden shadow-sm p-6">
-                            <div class="flex items-center mb-4">
-                                <!-- =================== FIXED HERE =================== -->
-                                <img src="assets/GOUTAM BARMAN.jpg" alt="Photo of Dr. Goutam Barman" class="w-20 h-20 rounded-full mr-4 object-cover">
-                                <!-- ================================================ -->
+                        <!-- Faculty Card 2: Dr. Goutam Barman -->
+                        <div class="faculty-card bg-white rounded-xl overflow-hidden shadow-sm p-6 text-center md:text-left">
+                            <div class="flex flex-col md:flex-row items-center mb-4">
+                                <img src="assets/goutam-barman.jpg" alt="Dr. Goutam Barman, Assistant Professor of Statistics at KGC" class="w-24 h-24 rounded-full md:mr-6 mb-4 md:mb-0 object-cover">
                                 <div>
-                                    <h4 class="font-bold text-gray-800 text-lg">Dr. Goutam Barman</h4>
+                                    <h3 class="font-bold text-gray-800 text-lg">Dr. Goutam Barman</h3>
                                     <p class="text-primary-600">Assistant Professor</p>
                                 </div>
                             </div>
                             <p class="text-gray-700 text-sm mb-4"><strong>Specialization:</strong> Applied Statistics and Informatics, Optimization and Survival Analysis.</p>
-                            <a href="assets/Goutam Barman.pdf" download class="download-card w-full text-center bg-primary-50 border border-primary-200 rounded-lg p-2 flex items-center justify-center text-sm hover:bg-primary-100">
-                                <i class="fas fa-file-pdf text-red-500 mr-2"></i>
-                                View Profile (PDF)
-                            </a>
+                            <a href="assets/Goutam Barman.pdf" download="Profile-Dr-Goutam-Barman-KGC-Statistics.pdf" class="download-card w-full text-center bg-primary-50 border border-primary-200 rounded-lg p-2 flex items-center justify-center text-sm hover:bg-primary-100"><i class="fas fa-file-pdf text-red-500 mr-2"></i>View Profile (PDF)</a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Students Section -->
+                <!-- =================================================================
+                     Our Students Sub-section (Interactive Accordion)
+                     ================================================================= -->
                 <div>
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-8 text-center">Our Students</h3>
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-8 text-center">Our Students</h2>
                     <div class="max-w-2xl mx-auto space-y-3">
-                        <!-- Accordion for 1st Year -->
-                        <div class="student-accordion-item">
-                            <button class="student-accordion-header">
-                                <span>B.Sc. First Year</span>
-                                <i class="fas fa-chevron-down accordion-icon"></i>
-                            </button>
-                            <div class="student-accordion-content">
-                                <ul class="student-list">
-                                    <li>Student Name 1</li>
-                                    <li>Student Name 2</li>
-                                    <li>Student Name 3</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Accordion for 2nd Year -->
-                        <div class="student-accordion-item">
-                            <button class="student-accordion-header">
-                                <span>B.Sc. Second Year</span>
-                                <i class="fas fa-chevron-down accordion-icon"></i>
-                            </button>
-                            <div class="student-accordion-content">
-                                <ul class="student-list">
-                                    <li>Student Name 4</li>
-                                    <li>Student Name 5</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Accordion for 3rd Year -->
-                        <div class="student-accordion-item">
-                            <button class="student-accordion-header">
-                                <span>B.Sc. Third Year</span>
-                                <i class="fas fa-chevron-down accordion-icon"></i>
-                            </button>
-                            <div class="student-accordion-content">
-                                <ul class="student-list">
-                                    <li>Student Name 6</li>
-                                </ul>
-                            </div>
-                        </div>
+                        <!-- Accordion Item: First Year -->
+                        <div class="student-accordion-item"><button class="student-accordion-header" aria-expanded="false"><span>B.Sc. First Year</span><i class="fas fa-chevron-down accordion-icon"></i></button><div class="student-accordion-content"><ul class="student-list"><li>Coming Soon</li></ul></div></div>
+                        <!-- Accordion Item: Second Year -->
+                        <div class="student-accordion-item"><button class="student-accordion-header" aria-expanded="false"><span>B.Sc. Second Year</span><i class="fas fa-chevron-down accordion-icon"></i></button><div class="student-accordion-content"><ul class="student-list">
+                                <li>Abhik Chakraborty</li> <li>Abir Mondal</li> <li>Arnab Barik</li> <li>Irfan Ukil</li> <li>Koushik Dey</li> <li>Mehuli Joarder</li>
+                            </ul></div></div>
+                        <!-- Accordion Item: Third Year -->
+                        <div class="student-accordion-item"><button class="student-accordion-header" aria-expanded="false"><span>B.Sc. Third Year</span><i class="fas fa-chevron-down accordion-icon"></i></button><div class="student-accordion-content"><ul class="student-list">
+                                <li>Asif Mian</li> <li>Rudranil Ghosh</li> <li>Safallya Biswas</li> <li>Subham Barman</li> <li>Subhrajit Roy</li>
+                            </ul></div></div>
+                        <!-- Accordion Item: Fourth Year -->
+                        <div class="student-accordion-item"><button class="student-accordion-header" aria-expanded="false"><span>B.Sc. Fourth Year</span><i class="fas fa-chevron-down accordion-icon"></i></button><div class="student-accordion-content"><ul class="student-list"><li>Coming Soon</li></ul></div></div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white pt-12 pb-6">
-        <!-- Your footer code here -->
+    <!-- =================================================================
+         Footer Section
+         ================================================================= -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6" aria-labelledby="footer-title">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="assets/Logo_1.png" alt="Statistics Department Krishnagar Government College Logo" class="h-10 w-10">
+                        <div><h3 id="footer-title" class="text-xl font-bold">Statistics Department</h3><p class="text-gray-400 text-sm">Krishnagar Government College</p></div>
+                    </div>
+                    <p class="text-gray-400 text-sm">Empowering students with analytical thinking and data-driven decision making skills.</p>
+                </div>
+                <div class="md:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul class="space-y-3">
+                            <li><a href="materials.html" class="text-gray-400 hover:text-white transition">Study Materials</a></li>
+                            <li><a href="research.html" class="text-gray-400 hover:text-white transition">Research</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Programs</h4>
+                        <ul class="space-y-3">
+                            <li><a href="programs.html" class="text-gray-400 hover:text-white transition">B.Sc. Statistics (Major/Minor)</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                        <address class="not-italic">
+                            <ul class="space-y-4">
+                                <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-primary-400" aria-hidden="true"></i><span class="text-gray-400 text-sm">Krishnagar Govt. College, Krishnagar, Nadia, West Bengal 741101</span></li>
+                                <li class="flex items-center"><i class="fas fa-envelope mr-3 text-primary-400" aria-hidden="true"></i><a href="mailto:ranasubrata@gmail.com" class="text-gray-400 text-sm hover:text-white">ranasubrata@gmail.com (HOD)</a></li>
+                            </ul>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6"><p class="text-gray-500 text-sm text-center">&copy; 2025 Krishnagar Government College. All rights reserved.</p></div>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Deferred script for global functionality -->
+    <script src="js/script.js" defer></script>
 </body>
 </html>
