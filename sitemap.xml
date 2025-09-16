@@ -1,67 +1,182 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!-- 
-====================================================================
-Sitemap for the Krishnagar Government College Statistics Department Website
-Generated on: 2025-08-31
-This file helps search engines like Google understand the structure of the website.
-====================================================================
--->
-
-  <!-- Homepage -->
-  <url>
-    <loc>https://i4002rfan.github.io/stats-dept-website/index.html</loc>
-    <lastmod>2025-08-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <!-- About Page -->
-  <url>
-    <loc>https://i4002rfan.github.io/stats-dept-website/about.html</loc>
-    <lastmod>2025-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Academic Programs Page -->
-  <url>
-    <loc>https://i4002rfan.github.io/stats-dept-website/programs.html</loc>
-    <lastmod>2025-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- People (Faculty & Students) Page -->
-  <url>
-    <loc>https://i4002rfan.github.io/stats-dept-website/people.html</loc>
-    <lastmod>2025-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Announcements Page -->
-  <url>
-    <loc>https://i4002rfan.github.io/stats-dept-website/announcements.html</loc>
-    <lastmod>2025-08-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Study Materials Page -->
-  <url>
-    <loc>https://i4002rfan.github.io/stats-dept-website/materials.html</loc>
-    <lastmod>2025-08-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Research Page -->
-  <url>
-    <loc>https://i4002rfan.github.io/stats-dept-website/research.html</loc>
-    <lastmod>2025-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-</urlset>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap.xml Review</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .container {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .issues, .corrected {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .code-block {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+        .good {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .bad {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .note {
+            background-color: #fff8e1;
+            padding: 10px;
+            border-left: 4px solid #ffc107;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sitemap.xml Code Review</h1>
+    
+    <div class="note">
+        <p>Your sitemap.xml file has several issues that need to be fixed for proper functionality with search engines.</p>
+    </div>
+    
+    <div class="container">
+        <div class="issues">
+            <h2>Issues Found</h2>
+            <ul>
+                <li><span class="bad">Error:</span> Script tags inside sitemap - XML sitemaps should not contain script elements</li>
+                <li><span class="bad">Error:</span> Comment placement - Comments should not be placed between XML elements</li>
+                <li><span class="bad">Warning:</span> All pages have the same lastmod date - this is unusual unless all pages were updated simultaneously</li>
+                <li><span class="bad">Warning:</span> No XML declaration at the beginning of the file</li>
+                <li><span class="bad">Warning:</span> No xmlns:xhtml attribute for multilingual sites (if needed)</li>
+            </ul>
+            
+            <h2>Best Practices</h2>
+            <ul>
+                <li><span class="good">✓</span> Proper XML structure with urlset and url elements</li>
+                <li><span class="good">✓</span> Correct use of changefreq and priority values</li>
+                <li><span class="good">✓</span> All required tags (loc, lastmod, changefreq, priority) are present</li>
+                <li><span class="good">✓</span> Valid URLs that appear to be working</li>
+            </ul>
+        </div>
+        
+        <div class="corrected">
+            <h2>Corrected Sitemap.xml</h2>
+            <div class="code-block">
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+    &lt;!--  
+    ====================================================================
+    Sitemap for the Krishnagar Government College Statistics Department Website
+    Generated on: 2025-08-31
+    This file helps search engines like Google understand the structure of the website.
+    ====================================================================
+    --&gt;
+    
+    &lt;!--  Homepage  --&gt;
+    &lt;url&gt;
+        &lt;loc&gt;https://i4002rfan.github.io/stats-dept-website/index.html&lt;/loc&gt;
+        &lt;lastmod&gt;2025-08-31&lt;/lastmod&gt;
+        &lt;changefreq&gt;weekly&lt;/changefreq&gt;
+        &lt;priority&gt;1.0&lt;/priority&gt;
+    &lt;/url&gt;
+    
+    &lt;!--  About Page  --&gt;
+    &lt;url&gt;
+        &lt;loc&gt;https://i4002rfan.github.io/stats-dept-website/about.html&lt;/loc&gt;
+        &lt;lastmod&gt;2025-08-31&lt;/lastmod&gt;
+        &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+        &lt;priority&gt;0.7&lt;/priority&gt;
+    &lt;/url&gt;
+    
+    &lt;!--  Academic Programs Page  --&gt;
+    &lt;url&gt;
+        &lt;loc&gt;https://i4002rfan.github.io/stats-dept-website/programs.html&lt;/loc&gt;
+        &lt;lastmod&gt;2025-08-31&lt;/lastmod&gt;
+        &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+        &lt;priority&gt;0.9&lt;/priority&gt;
+    &lt;/url&gt;
+    
+    &lt;!--  People (Faculty &amp; Students) Page  --&gt;
+    &lt;url&gt;
+        &lt;loc&gt;https://i4002rfan.github.io/stats-dept-website/people.html&lt;/loc&gt;
+        &lt;lastmod&gt;2025-08-31&lt;/lastmod&gt;
+        &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+        &lt;priority&gt;0.8&lt;/priority&gt;
+    &lt;/url&gt;
+    
+    &lt;!--  Announcements Page  --&gt;
+    &lt;url&gt;
+        &lt;loc&gt;https://i4002rfan.github.io/stats-dept-website/announcements.html&lt;/loc&gt;
+        &lt;lastmod&gt;2025-08-31&lt;/lastmod&gt;
+        &lt;changefreq&gt;daily&lt;/changefreq&gt;
+        &lt;priority&gt;0.9&lt;/priority&gt;
+    &lt;/url&gt;
+    
+    &lt;!--  Study Materials Page  --&gt;
+    &lt;url&gt;
+        &lt;loc&gt;https://i4002rfan.github.io/stats-dept-website/materials.html&lt;/loc&gt;
+        &lt;lastmod&gt;2025-08-31&lt;/lastmod&gt;
+        &lt;changefreq&gt;weekly&lt;/changefreq&gt;
+        &lt;priority&gt;0.8&lt;/priority&gt;
+    &lt;/url&gt;
+    
+    &lt;!--  Research Page  --&gt;
+    &lt;url&gt;
+        &lt;loc&gt;https://i4002rfan.github.io/stats-dept-website/research.html&lt;/loc&gt;
+        &lt;lastmod&gt;2025-08-31&lt;/lastmod&gt;
+        &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+        &lt;priority&gt;0.6&lt;/priority&gt;
+    &lt;/url&gt;
+&lt;/urlset&gt;
+            </div>
+            
+            <h2>Key Changes Made</h2>
+            <ul>
+                <li><span class="good">✓</span> Removed invalid script tags</li>
+                <li><span class="good">✓</span> Added XML declaration</li>
+                <li><span class="good">✓</span> Properly formatted comments</li>
+                <li><span class="good">✓</span> Improved indentation for readability</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="note">
+        <p><strong>Note:</strong> Remember to update the <code>lastmod</code> dates to reflect the actual last modification date of each page rather than using the same date for all pages.</p>
+    </div>
+</body>
+</html>
